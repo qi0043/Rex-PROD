@@ -1,0 +1,652 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*	
+	Flinders Univeristy
+	by Christopher Carapetis
+	
+	Based on the 1KB grid framework
+	http://www.1kbgrid.com/
+	by Tyler Tate
+	http://www.1kbgrid.com/
+	http://www.tylertate.com/
+	http://www.gnu.org/licenses/gpl.html
+	
+	CSS reset based on the Less Framework 4
+	http://lessframework.com
+	by Joni Korpi
+	License: http://creativecommons.org/licenses/MIT/	*/
+	
+	
+/*
+
+Stle sheet to enable background images when 
+not hosted on main Uni web server
+
+All images referenced to http://www.flinders.edu.au
+
+*/
+	
+	
+
+
+
+
+
+
+/* General Styles */
+	
+	body {
+	padding:0px 0px 25px 0px;
+	background-color: #FFF;
+	}
+	
+
+	
+	.home_navigation li, nav h3 a {
+		list-style:none;
+		background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/bullet_black.png) top left no-repeat;
+		padding: 0px 0px 0px 20px;
+	}
+
+
+	
+	#events li{
+		list-style:none;
+		background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/calendar_icon.png) top left no-repeat;
+		margin:0px 0px 0px 10px;
+		padding: 0px 0px 10px 25px;
+	}
+	
+
+	
+/*********** info graphics and icons ****************/
+
+
+	.seminar {
+		background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/info_graphics/seminar.png) center right no-repeat;
+	}
+	
+	.notices {
+		background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/info_graphics/notes.png) center right no-repeat;
+	}
+	
+	.grad_cap {
+		background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/info_graphics/cap.png) center right no-repeat;
+	}
+	
+	.certificate{
+		background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/info_graphics/certificate.png) center right no-repeat;
+	}
+	
+	.search {
+		background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/info_graphics/search.png) center right no-repeat;
+	}
+	
+	.abroad {
+		background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/info_graphics/jet.png) center right no-repeat;
+	}
+	
+	.info {
+		background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/info_graphics/info.png) center right no-repeat;
+	}
+	
+	.question {
+		background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/info_graphics/question.png) center right no-repeat;
+	}
+	
+	.navigate {
+		background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/info_graphics/navigate.png) center right no-repeat;	
+	}
+	
+	.chat {
+		background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/info_graphics/chat.png) center right no-repeat;	
+	}
+	
+	.openday {
+		background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/info_graphics/openday.png) center right no-repeat;	
+	}
+	
+
+/*********** end info graphics and icons ****************/
+	
+/****** main_header styles *******/ 
+
+	
+	.main_header{
+		background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/header_bg.jpg) #fce66d no-repeat top left;
+	}
+
+	
+
+
+
+
+/****** Section navigation styles *******/
+	
+
+	
+	.section_nav .section a {
+		background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/section_nav_expand.jpg) no-repeat top left;
+	}
+	
+	.section_nav .section a:hover {
+		background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/section_nav_expand.jpg) #fff6cc no-repeat top left;
+	}
+	
+	.section_nav li a.sec_selected {
+		background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/section_nav_contract.jpg) #fff6cc no-repeat top left;
+	}
+	
+
+	
+
+
+	
+
+
+
+/****** Footer styles *******/
+
+	 footer {
+		 background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/footer_bg.jpg) #fce66d no-repeat top;
+		 Padding: 10px 0px 10px 0px;
+	 }
+	 
+
+									
+	#prevBtn a, #nextBtn a,
+	#slider1next a, #slider1prev a{  
+		display:block;
+		position:relative;
+		width:30px;
+		height:77px;
+		background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/btn_prev.gif) no-repeat 0 0;	
+		}	
+	#nextBtn a, #slider1next a{ 
+		background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/btn_next.gif) no-repeat 0 0;	
+		}	
+		
+	/* controls */	
+
+	
+	ol#controls li a{
+		background: url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/slider_nav_bg.png) no-repeat 0 0;
+		color:#fff;
+		padding:3px 5px 0px 5px;
+		text-decoration:none;
+		}
+	ol#controls li.current a{
+		background: url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/slider_nav_bg_current.png) no-repeat 0 0;
+		color:#ffd300;
+		cursor:default;
+		}
+	
+
+
+/*********** Gradients  *************/
+
+
+	
+	.container_gradient {
+		background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/grey_gradient.jpg) #eee repeat-x bottom center;
+	}
+	
+	.blue_gradient {
+	background-color: #C3DFF5;
+	background-image: url(../gold/light_blue_gradient.jpg);
+	background-repeat: repeat-x;
+	background-position: center bottom;
+	}
+	
+	.navy_gradient {
+		background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/navy_gradient.jpg) #62a4d3 repeat-x bottom center;
+	}
+	
+	.charcoal_gradient {
+	background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/dark_grey_gradient.jpg) #a0a5a9 repeat-x bottom center;
+	color:#fff;
+	text-decoration: none;
+	}
+.container a {
+	text-decoration: none;
+}
+	
+
+	
+	.red_gradient {
+		background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/red_gradient.jpg) #f8caa8 repeat-x bottom center;
+	}
+	
+
+	
+	.green_gradient {
+		background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/green_gradient.jpg) #d4e0d8 repeat-x bottom center;
+		color:#000;
+	}
+	
+
+	
+	.gold_gradient {
+		background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/gold_gradient.jpg) #fce66d repeat-x bottom center;
+		color:#000;
+	}
+	
+
+
+	
+
+
+
+/*********** Style for selection in tinyMCE  *************/
+
+
+
+h3.headerCoffeeArrowRight {margin: 0pt; padding: 0.4em 20pt; background-image: url('http://www.flinders.edu.au/app_templates/flinderstemplates/nav_arrow.jpg'); background-repeat: no-repeat; background-position: left center;}
+
+
+
+
+
+/*** New classes ***/
+
+
+
+.info_graphic {background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/infographics/info_graphic_plain.jpg) center right no-repeat;}
+
+.info_graphic_seminar {background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/infographics/info_graphic_seminar.jpg) center right no-repeat;}	
+.info_graphic_notices {background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/infographics/info_graphic_note.jpg) center right no-repeat;}
+.info_graphic_grad_cap {background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/infographics/info_graphic_grad_cap.jpg) center right no-repeat;}
+.info_graphic_certificate{background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/infographics/info_graphic_certificate.jpg) center right no-repeat;}
+.info_graphic_search {background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/infographics/info_graphic_search.jpg) center right no-repeat;}
+.info_graphic_abroad {background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/infographics/info_graphic_abroad.jpg) center right no-repeat;}
+.info_graphic_info {background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/infographics/info_graphic_info.jpg) center right no-repeat;}
+.info_graphic_question {background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/infographics/info_graphic_question.jpg) center right no-repeat;}
+.info_graphic_navigate {background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/infographics/info_graphic_navigate.jpg) center right no-repeat;	}
+.info_graphic_chat {background:url(http://www.flinders.edu.au/flinders/app_templates/flinderstemplates/images/infographics/info_graphic_chat.jpg) center right no-repeat;	}
+
+
+
+
+
+/*********** End TInyMCE Styles *************/
+
+
+
+
+/*********** Form styles **********/
+
+
+
+
+form {
+	margin-top: 30px;
+	margin-right: 10px;
+	margin-bottom: 30px;
+	margin-left: 10px;
+}
+
+
+
+.mainForm1 fieldset {
+	border: 1px solid #000;
+	padding: 5px 15px 10px;
+	background-color: #FFF;
+	margin-bottom: 30px;
+		-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius:5px;
+	border-radius: 5px;
+}
+
+
+.mainForm1 legend
+{
+	padding: 5px;
+	
+	background-color:#FFF;
+	font-weight:bold;
+}
+
+
+
+.mainForm1 #login_submit {
+	line-height:1.2;
+	margin:0px 0px 10px 5px;
+	padding:4px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius:5px;
+	border-radius: 5px;
+	cursor:pointer;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	}
+
+
+ .login_submit {
+	line-height:1.2;
+	margin:0px 0px 10px 5px;
+	padding:4px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius:5px;
+	border-radius: 5px;
+	cursor:pointer;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	}
+
+.mainForm1 #login_submit:hover {
+		
+		color: #ffd300;
+	}
+	
+	.updated {
+	font-size: 0.8em;
+	font-style: italic;
+	text-align:right;
+}
+
+.mainForm1 .login_submit:hover,
+.mainForm1 .login_submit_large:hover{
+		
+		color: #ffd300;
+	}
+	
+.mainForm1 .login_submit_large {
+	line-height:1.2;
+	font-size: 1.4em;
+	margin:0px 0px 10px 5px;
+	padding:4px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius:5px;
+	border-radius: 5px;
+	cursor:pointer;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	}
+	
+.updated {
+	font-size: 0.8em;
+	font-style: italic;
+	text-align:right;
+}
+
+.mainForm1 input, .mainForm1 select {
+	
+	margin-bottom:10px;
+	
+	
+}
+
+
+ .mainForm1 select {
+	height: auto;	
+	
+	
+	
+	
+}
+
+.mainForm1 input.medium {
+	
+	width: 25em;
+	
+}
+
+.mainForm1 textarea {
+	
+	width: 50em;
+	
+}
+
+
+
+.mainForm1 input.short {
+	
+	width: 6em;
+	
+}
+
+.mainForm1 input.allcaps {
+	text-transform:uppercase;
+}
+
+
+.mainForm1 select{
+	background-color:#333;
+	color:#FFF
+	
+	
+}
+
+.mainForm1 label {
+	margin: 0 0 0 5px;
+	font-weight:bold;
+	width: 18em;
+	float:left;
+}
+.mainForm1 select {
+	color: #FFF;
+}
+
+
+fieldset #photoupload {
+	margin: 10px;
+	padding: 10px;
+	float: right;
+	width: 250px;
+	border: 1px solid #999;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius:5px;
+	border-radius: 5px;
+}
+	
+.info_graphic_accept { }
+.info_graphic_withdraw { }
+
+.info_graphic_accept a:link,
+.info_graphic_accept a:visited {
+	color:#FFF;
+	
+font-size:16px;
+text-decoration:none;
+}
+
+
+.info_graphic_withdraw a:link,
+.info_graphic_withdraw a:visited {
+	
+	
+		color:#FFF;
+	
+font-size:16px;
+text-decoration:none;}
+
+.info_graphic_accept a:hover,
+.info_graphic_withdraw a:hover {
+	color:#000;
+
+}
+
+
+	.grey_gradient {
+	color:#fff;
+	background-color: #DADADA;
+	background-image: url(../gold/light_grey_gradient.jpg);
+	background-repeat: repeat-x;
+	background-position: center bottom;
+	}
+	
+.info_graphic a {
+		display: inline;
+		color:#fff;
+	}.redText {
+	color: #C00;
+}
+.thePhoto {
+	float: right;
+	margin-bottom: 15px;
+	margin-left: 15px;
+}
+table, caption, tbody, tfoot, thead, tr, th, td{
+		margin: 0px;
+		padding: 0px;
+		
+	}
+	
+	td, th {
+		padding:1px;
+	}
+	
+	
+	.mainForm1 .btnDisabled, 
+	.mainForm1 .btnDisabled:hover {
+		cursor:default;
+		color:#FFF;
+	}
+
+// report table styles 
+
+table.alignmenttable,
+table {
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-top-style: dotted;
+	border-left-style: dotted;
+	border-top-color: #000;
+	border-left-color: #000;
+}
+	
+.alignmenttable th,
+.alignmenttable td {
+	border: 1px dotted #000;
+	border-collapse:collapse;	
+	
+	
+}
+
+
+.wide-10
+{
+	width: 10%;
+}
+.wide-15
+{
+	width: 15%;
+}
+
+.wide-20
+{
+	width: 20%;
+}
+.wide-25
+{
+	width: 25%;
+}
+.wide-30
+{
+	width: 25%;
+}
+
+.importantText {
+	color: #F00;
+}
+
+
+#accordion {
+
+	margin-bottom: 20px;	
+	
+}
+
+.ui-tabs-panel {
+	min-height: 10px;
+	
+}
+
+/****** Content Link styles *******/ 
+
+	a.normalLink {
+		color:#a94807;
+	}
+	
+	a.normalLink:visited {
+		color:#a94807;
+	}
+
+	a.normalLink:hover {
+		color:#002f60;
+	}
+	
+	
+	
+	
+	.bordertop {
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #000;
+}
+
+
+/******* Tables *******/
+
+table.aTable {
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-left-style: solid;
+	border-top-color: #000;
+	border-left-color: #000;
+	border-collapse:collapse;
+
+}
+
+.aTable th,
+.aTable td {
+	margin-top: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-collapse:collapse;
+	padding-top: 2px;
+	padding-right: 6px;
+	padding-bottom: 6px;
+	padding-left: 2px;	
+	
+}
+
+.noprint {
+
+}
+.signature25, .signature12, .printonly {
+	display: none;
+	visibility: hidden;	
+}
+

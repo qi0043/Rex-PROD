@@ -1,0 +1,165 @@
+/* Style for selection in tinyMCE */
+.numberedlistupperroman {list-style-type: upper-roman}
+.numberedlistlowerroman {list-style-type: lower-roman}
+.numberedlistupperalpha {list-style-type: upper-alpha}
+.numberedlistloweralpha {list-style-type: lower-alpha}
+.numberedlisttwodigits {list-style-type: decimal-leading-zero}
+.tab1 {padding-left:1.5em}
+.tab2 {padding-left:3.0em}
+.tab3 {padding-left:4.5em}
+.tab4 {padding-left:6.0em}
+.tab5 {padding-left:7.5em}
+.tab6 {padding-left:9.0em}
+.tab7 {padding-left:10.5em}
+.floatleft {float:left;}
+.floatleft img {margin:20px; margin-bottom:10px;}
+.floatright {float:right;}
+.floatright img {margin:20px; margin-bottom:10px;}
+.floatclear {clear:both;}
+/*.clear {clear:both;} */
+.noclass {}
+.imgwithcaption {
+	margin-bottom:0px;
+}
+.imgcaption {
+	margin-bottom:10px;
+	margin-left:10px;
+	font-size:90%;
+}
+
+.imgnoborder {
+	border:0;
+}
+.tablenoborders {
+	border-left:none; border-right:none; border-top:none; border-bottom:none;
+}
+.tableborder1pxgrey {
+	border-left:solid 1px #999999; border-right:solid 1px #999999;; border-top:solid 1px #999999;; border-bottom:solid 1px #999999;
+}
+.tableallborders1pxgrey, td.tableallborders1pxgrey {
+	border-left:solid 1px #999999; border-right:solid 1px #999999;; border-top:solid 1px #999999;; border-bottom:solid 1px #999999;
+}
+.tableminimalborders {
+	border: solid 1px #cccccc;
+}
+ul li ol li {        list-style-type:decimal;
+}
+
+.listnobullets {
+	list-style-type:none;
+	font-weight:normal;
+  margin: 0;
+}
+.listnobullets ul {
+	list-style-type:none;
+}
+.listnobullets li {
+	list-style-type:none;
+}
+/*
+.flincontenttable1 {
+	border: solid 1px #777777;
+}
+.flincontenttable1 td {
+	border: solid 1px #777777;
+	padding: 3px;
+}
+*/
+/* Sample content item FlindersTable1 */
+table.FlindersTable1 {border:solid 1px #aaaaaa;}  
+.FlindersTable1 thead th {text-align:left;}
+.FlindersTable1 tr {border:solid 1px #aaaaaa;} 
+.FlindersTable1 td {border:solid 1px #aaaaaa;} 
+.FlindersTable1 th {font-weight:bold; background-color:#e1f3ff; border:solid 1px #aaaaaa;} 
+/* Classes added for Course Program of Study pages */
+tr.footnote td, tr.dividingnote td {border-left:solid 1px white;border-right:solid 1px white;}
+tr.footnote p{font-size:90%;}
+tr.dividingnote p {font-size:100%;}
+
+.Flindersppmanualbanner dt {
+clear:both;
+float:left;
+font-weight:bold;
+margin-bottom:5px;
+width:170px;
+} 
+.Flindersppmanualbanner dd {float:none; margin-left:180px; margin-bottom:5px; width:200px;}
+#ppindent-nobullets {
+	margin: 2em;
+	width: 80%;
+	padding: 5px;
+}
+		
+#ppindent-nobullets ul {
+	list-style: none;
+	margin-left: 1em;
+	padding-left: 1em;
+	text-indent: -2.22.2em;
+}
+
+.fullwidth {width:100%}
+.footnote {
+	font-size:90%;
+}
+h2.headerBannerStudents,h2.headerBannerAdministration, h2.headerBannerNews, h2.headerBannerTeaching, h2.headerBannerActivitiesEvents, h2.headerBannerOffersBenefits, h2.headerBannerGradient { 
+  background-attachment: scroll;
+  background-position: center right;
+  background-repeat: no-repeat;
+  height: 37px;
+  line-height: 37px;
+  margin: 0 0 0.8em 0;
+  padding-left: 1em;
+}
+h2.headerBannerGradient {
+  background-image: url(/flinders/common-files/images/gradient.jpg);
+}
+h2.headerBannerStudents {
+  background-image: url(/flinders/common-files/images/students.jpg);
+}
+h2.headerBannerAdministration {
+  background-image: url(/flinders/common-files/images/centre_inst.jpg);
+}
+h2.headerBannerNews {
+  background-image: url(/flinders/common-files/images/news.jpg);
+}
+h2.headerBannerTeaching {
+  background-image: url(/flinders/common-files/images/schools_dept.jpg);
+}
+h2.headerBannerActivitiesEvents { 
+  background-image: url(/flinders/common-files/images/activities_events.jpg);
+}
+h2.headerBannerOffersBenefits { 
+  background-image: url(/flinders/common-files/images/offers_benefits.jpg);
+}
+h3.headerCoffeeArrowRight {
+  margin: 0pt; padding: 0.4em 20pt; background-image: url('http://www.flinders.edu.au/app_templates/flinderstemplates/nav_arrow.jpg'); background-repeat: no-repeat; background-position: left center;
+}
+.orange_square_dot {
+	list-style-image: url(http://www.flinders.edu.au/common-files/images/colour%20bullets/orangesquaredot.gif);
+}
+.green_square_dot {
+	list-style-image: url(http://www.flinders.edu.au/common-files/images/colour%20bullets/greensquaredot.gif);
+}
+.purple_square_dot {
+	list-style-image: url(http://www.flinders.edu.au/common-files/images/colour%20bullets/purplesquaredot.gif);
+}
+.blue_square_dot {
+	list-style-image: url(http://www.flinders.edu.au/common-files/images/colour%20bullets/bluesquaredot.gif);
+}
+.red_square_dot {
+	list-style-image: url(http://www.flinders.edu.au/common-files/images/colour%20bullets/redsquaredot.gif);
+}
+.yellow_square_dot {
+	list-style-image: url(http://www.flinders.edu.au/common-files/images/colour%20bullets/yellowsquaredot.gif);
+}
+/* Classes for aligning captioned images (default behaviour) */
+div.captionedimageright {     float: right;     clear: right;      } 
+div.captionedimageleft {     float: left;     margin-right:0.5em;   } 
+/* Editor-only: show bad links (detected by containerversions afterupdate event) */
+a.flinders-badlink {color:red;}
+/* Collapsible content */
+.collapsible h2:after {content:" [+]";font-size:0.7em;color:#666;}
+.collapsible h2.active:after {content:" [-]";}
+.collapsible h3:after {content:" [+]";font-size:0.7em;color:#666;}
+.collapsible h3.active:after {content:" [-]";}
+

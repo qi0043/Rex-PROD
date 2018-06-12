@@ -1,0 +1,1152 @@
+/*	
+	Flinders Univeristy
+	by Christopher Carapetis
+	
+	Based on the 1KB grid framework
+	http://www.1kbgrid.com/
+	by Tyler Tate
+	http://www.1kbgrid.com/
+	http://www.tylertate.com/
+	http://www.gnu.org/licenses/gpl.html
+	
+	CSS reset based on the Less Framework 4
+	http://lessframework.com
+	by Joni Korpi
+	License: http://creativecommons.org/licenses/MIT/	*/
+	
+
+/*	Resets
+	------	*/
+
+	html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+	p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+	img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+	dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+	article, aside, canvas, details, figure, figcaption, hgroup, 
+	menu, footer, header, nav, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
+	
+	table, caption, tbody, tfoot, thead, tr, th, td{
+		margin: 0;
+		padding: 0;
+	}
+	
+	article, aside, canvas, figure, figure img, figcaption, hgroup,
+	footer, header, nav, section, audio, video {
+		display: block;
+	}
+	
+	a img {border: 0;}
+
+/*	End Resets
+	------	*/
+
+/*	Typography presets
+	------------------	*/
+
+	h1 {
+		font-size: 20px;
+		line-height: 24px;
+	}
+	 
+	h2 {
+		font-size: 18px;
+		line-height: 22px;
+	}
+	
+	h3 {
+		font-size: 16px;
+		line-height: 20px;
+		
+	}
+	
+	h4, h5, h6 {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	
+	h1, h2, h3, h4, h5, h6{
+		margin:0px 0px 10px 0px;
+	}
+	
+	body {
+		font: 13px/1.3 Helvetica, Arial, sans-serif, serif;
+	}
+	
+	ul, ol {
+		margin: 10px 10px 10px 30px;
+	}
+	
+	nav ul{
+		margin: 0px 0px 10px 0px;
+		padding: 0px;	
+	}
+
+
+
+/* ================ */
+/* = The Grid = */     /* 15 columns, 60 pixels each, with 10 pixel gutter, 10px outer margin */
+/* ================ */
+
+	.grid_1 { width:70px; }
+	.grid_2 { width:130px; }
+	.grid_3 { width:200px; }
+	.grid_4 { width:270px; }
+	.grid_5 { width:340px; }
+	.grid_6 { width:410px; }
+	.grid_7 { width:480px; }
+	.grid_8 { width:550px; }
+	.grid_9 { width:620px; }
+	.grid_10 { width:690px; }
+	.grid_11 { width:760px; }
+	.grid_12 { width:830px; }
+	.grid_13 { width:900px; }
+	.grid_14 { width:970px; }
+	.grid_15 { width:1040px; }
+	
+	
+	.column {
+		margin: 0 0px 0px 10px;
+		overflow: hidden;
+		float: left;
+		display: inline;
+	}
+	.row {
+		width: 1060px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	.row .row {
+		margin: 0 0px 0px -10px;
+		width: auto;
+	}
+	
+	
+/* ================ End of Grid = */     /* 15 columns, 60 pixels each, with 10 pixel gutter, 10px outer margin */
+
+
+
+/* General Styles */
+	
+	body {
+		/*background:url(../images/body_bg_01.jpg) no-repeat bottom;*/
+		padding:0px 0px 25px 0px;
+	}
+	
+	#page_wrapper {
+		width:1060px;
+		margin: 0 auto;
+		overflow: hidden;	
+	}
+	
+	#page_content {
+		margin: 10px 0px;
+		overflow: hidden;
+	}
+	
+	.home_navigation li, nav h3 a {
+		list-style:none;
+		background:url(/flinders/app_templates/flinderstemplates/images/bullet_black.png) top left no-repeat;
+		padding: 0px 0px 0px 20px;
+	}
+	
+
+	li {
+		line-height:1.5;
+	}
+	
+	hr {
+		border-bottom:1px solid #cccccc;
+		margin:0px 0px 10px 0px;
+		width:100%;
+	}
+	
+	
+	table {
+			margin:10px 0px 10px 0px;
+			border-color:#000;
+		}
+	
+	td, th {
+		padding:5px;
+	}
+	
+	table ul, table ol {
+		margin:0 10px 10px 20px;
+	}	
+	
+	#news{
+		padding: 0px;
+	}
+	
+	#news ul{
+		margin: 10px 20px;
+	}
+	
+	#news img{
+		float:left;
+		margin: 0px 10px 0px 0px;
+	}
+	
+	#news img.rss, img.rss {
+		float:none;
+		margin: 0px 0px 0px 5px;
+	}
+	
+	#events ul{
+		margin: 0 0 10px 0;
+		padding: 0px;	
+	}
+	
+	#events li{
+		list-style:none;
+		background:url(/flinders/app_templates/flinderstemplates/images/calendar_icon.png) top left no-repeat;
+		margin:0px 0px 0px 10px;
+		padding: 0px 0px 10px 25px;
+	}
+	
+	article, aside {
+	 margin:0px 0px 10px 0px;	
+	}
+	
+	article P, aside p {
+		margin:0px 0px 10px 0px;	
+	}
+	
+	article h1, aside h1 {
+		margin:0px 0px 15px 0px;
+	}
+	
+	article h2, article h3, article h4, article h5, article h6 {
+		margin:0px 0px 15px 0px;
+	}
+	
+	aside h2, aside h3, aside h4, aside h5, aside h6 {
+		margin:0px 0px 15px 0px;
+	}
+	
+	article ul, aside ul, article ol, aside ol{
+		margin:0px 10px 10px 40px;	
+	}
+	
+	
+	#course_search {
+		background-color:#dbdbdb;
+		margin:0px 0px 10px 0px;
+		padding: 12px 10px 10px 10px;
+		font-size:16px;
+		line-height:1.2;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-khtml-border-radius: 10px;
+		border-radius: 10px;
+		
+	}
+	
+	#course_search .searchLabel{
+		float:left;
+		display:inline;
+		padding: 0px 5px 0px 0px;
+	}
+	
+	#course_search {
+		background-color:#dbdbdb;
+		margin:0px 0px 10px 0px;
+		padding: 12px 10px 10px 10px;
+		font-size:16px;
+		line-height:1.2;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-khtml-border-radius: 10px;
+		border-radius: 10px;
+		
+	}
+	
+	#course_search .searchLabel{
+		float:left;
+		display:inline;
+		padding: 0px 5px 0px 0px;
+	}
+	
+	blockquote {
+		padding-left:20px;
+		padding-right:20px;
+	}
+	
+	
+	
+		
+	
+
+	
+/****** main_header styles *******/ 
+
+	
+	.main_header{
+		background:url(/flinders/app_templates/flinderstemplates/images/header_bg.jpg) #fce66d no-repeat top left;
+	}
+	
+	.main_header h1 {
+		position: absolute;
+		left: -2000em;
+	}
+	
+	#main_banner {
+		height:65px;
+		width:1060px;
+	}
+	
+	#main_banner img{
+		margin:0px;
+		padding:0px;
+	}
+	
+	#main_banner img.tagline {
+		margin:0px 120px 0px 0px;
+		float:right;
+		display:inline;	
+		z-index:1000;
+	}
+	
+	P {
+		margin: 0px 0px 10px 0px;
+	}
+	
+	
+	
+	
+/* Glodal Nav */ 
+
+	#global_nav{
+		margin:0px 0px 0px -10px; /* This is to align the links in the global nav to the text on the left hand side (is there a better way to do this? */ 
+		padding:0px 0px 0px 0px;
+	}
+	#global_nav h2 {
+		position: absolute;
+		left: -2000em;
+	}
+	
+	#global_nav ul {
+		list-style:none;
+		margin:0px;
+		padding: 0px;
+		overflow:visible;
+	}
+	
+	#global_nav li {
+		float: left;
+		margin: 0px;
+	}
+	
+	#global_nav a  {
+		font-size: 13px;
+		margin:0px 0px;
+		padding: 5px 10px 5px 10px;
+		text-decoration:none;
+	}
+	
+	#global_nav li a:link, #global_nav li a:visited {
+		color:#000;
+	}
+	
+	#global_nav li a:hover  {
+		background-color:#666;
+		color:#FFF;
+	}
+	
+	#global_nav_search {
+		margin: 4px 0px 0px 20px;
+		text-align:right;
+	}
+	
+	
+	#searchform div {
+		margin: 0;
+		line-height: 25px;
+	}
+	#searchform #q { 
+		border:1px solid #4B4B4D;
+		background: #fff;
+		padding: 3px 2px 2px 0;
+	}
+	#searchform input { 
+		vertical-align: top;
+		margin: 0 !important;
+		line-height: 1;
+		outline:0 !important;
+	}
+	
+/****** End main_header styles *******/
+
+
+
+/****** Section navigation styles *******/
+	
+	nav a {
+		text-decoration:none;
+		list-style:none;
+		display:block;
+	}
+	
+	.section_nav ul {
+		border-top:1px dotted #ccc;
+		margin:0px 0px 10px 0px;
+		padding:0px;
+	}
+	.section_nav ul ul {
+		border-top:none;
+		margin:0px 0px 0px 0px;
+	}
+	
+	.section_nav ul.children {
+		margin:0 0 0px;
+		padding:0;
+	}
+	
+	nav li li {
+		margin:0px 0px 0px 20px;
+		list-style:none;
+	}
+
+	.section_nav h2 {
+		position: absolute;
+		left: -2000em;
+	}
+	
+	.section_nav li {
+			border-bottom:1px dotted #ccc;
+			padding:2px 0px 2px 0px;
+	}
+	
+	.section_nav li li {
+			border-bottom:none; 		
+	}
+	
+	.section_nav  li.section a, .section_nav  li.sub_section a, .section_nav  li.sub_page a, .section_nav  li.current_page a, .section_nav li.sec_selected a  {
+		padding:2px 5px 2px 15px;
+	}
+	
+	.section_nav .section a {
+		background:url(/flinders/app_templates/flinderstemplates/images/section_nav_expand.jpg) no-repeat top left;
+	}
+	
+	.section_nav .section a:hover {
+		background:url(/flinders/app_templates/flinderstemplates/images/section_nav_expand.jpg) #fff6cc no-repeat top left;
+	}
+	
+	.section_nav li a.sec_selected {
+		background:url(/flinders/app_templates/flinderstemplates/images/section_nav_contract.jpg) #fff6cc no-repeat top left;
+	}
+	
+	.section_nav li a.current_page {
+		background:#fff6cc;
+	}
+	.section_nav a.sec_selected:hover {
+		color:#b75b09;
+	}
+	
+	
+	.section_nav a:hover {
+		background:#fff6cc;
+		
+	}
+
+
+	.blogs .sub a, .blogs .sub a:hover { /*** Remove icon backgrounds (i.e. expand etc) from blogs side nave ***/
+		background-image:none;
+	}
+	
+
+/****** bread crumbs styles *******/
+
+/****** Content Link styles *******/ 
+
+	a {
+		color:#a94807;
+	}
+	
+	a:visited {
+		color:#a94807;
+	}
+
+	a:hover {
+		color:#002f60;
+	}
+	
+	.more{
+		text-align:right;
+		margin-top:-15px;
+	}
+	
+	img {
+		margin:0px 0px 0px 0px;
+	}
+	
+	ul img {
+		margin:0;
+	}
+	
+	.border_top {
+		 border-top:1px solid #a0a5a9;
+		 padding: 10px 0px 0px 0px;
+	}
+	
+/****** End Content Link styles *******/ 
+
+/****** home_content Link styles *******/
+
+	.home_content a {
+		text-decoration:none;
+	}
+	
+
+/****** end home_content Link styles *******/
+
+/****** bread crumbs styles *******/
+
+	.breadcrumbs {
+		background-color:#eee;
+		padding:5px 10px 5px 10px;
+		margin: 0px 0px 10px 0px;
+		color:#002f60;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-khtml-border-radius: 10px;
+		border-radius: 10px;
+	}
+	
+	.breadcrumbs a {
+		text-decoration:none;
+		color:#002f60;
+	}
+	
+	.breadcrumbs a:visited {
+		color:#002f60;
+	}
+
+	.breadcrumbs a:hover {
+		color:#b75b09;
+	}
+        .breadcrumbs ul {
+                display:inline;margin-left:0;padding-left:0;
+        }
+        .breadcrumbs li {
+                display:inline;margin-left:0;padding-left:0;
+        }
+        .breadcrumbs a {
+                display:inline;
+        }
+
+/****** End bread crumbs styles *******/	
+
+/****** Print disclaimer styles *******/
+	div#printdisclaimer,div#printdisclaimersingle {
+		display: none;
+	}
+/****** End Print disclaimer styles *******/
+
+/****** Footer styles *******/
+
+	 footer {
+		 Padding: 10px 0px 10px 0px;
+	 }
+	 
+	 .main_footer {
+		 background:url(/flinders/app_templates/flinderstemplates/images/footer_bg.jpg) #fce66d no-repeat top;
+		 Padding: 10px 0px 10px 0px;
+	 }
+	 
+	 .alt_footer {
+		 background:url(/flinders/app_templates/flinderstemplates/images/footer_app_bg.jpg) #fce66d no-repeat top;
+		 Padding: 5px 0px 10px 0px;
+		 height:25px;
+	 }
+
+	
+	#quicklinks {
+		margin:0px 0px 0px 0px;
+	}
+	
+	.social_media{
+		text-align:left;
+		margin:0px 0px 25px 0px;
+	}
+	
+	.social_media ul{
+		margin:0px;
+		padding:0px;
+	}
+	
+	.disclaimer{
+		text-align:left;
+	}
+	
+	#member{
+		margin:10px 0px 0px 0px;
+	}
+	
+	
+	footer li{
+		padding:0px 0px 0px 0px;
+		list-style:none;
+	}
+	
+	footer a  {
+		text-decoration:none;
+	 }
+	
+	footer a:link, footer a:visited  {
+		 color:#000;
+	 }
+	 
+	footer a:hover  {
+		color:#a94807;
+	}
+	
+	footer img {
+		padding:0;	
+	}
+	
+	footer h1, footer h2, footer h3 {
+		font-size:13px;	
+	}
+	
+	 #footerNav {
+		margin:10px 0px 0px 0px;
+		font-size:10px;
+		text-align:right;
+	}
+
+
+	 .inspiring_tag {
+		 text-align:right;
+		 margin:5px -10px 5px 0px;
+	 }
+	 
+	  .inspiring_tag P {
+		 margin:0px 0px 0px;
+	 }
+	 
+	 .indigenous {
+		 background:url(/flinders/app_templates/flinderstemplates/images/indigenous.png) no-repeat top left;
+		 padding:0px 0px 0px 40px;
+	 }
+
+
+/****** End Footer styles *******/ 
+
+/*********** Easy Slider *************/
+
+	#slider{
+		position:relative;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-khtml-border-radius: 10px;
+		border-radius: 10px;
+		background-color:#4B4B4D;
+		margin: 0px 0px 10px 0px;
+	}
+	#slider ul, #slider li
+	{
+		margin:0;
+		padding:0;
+		list-style:none;
+		}
+	#slider li{ 
+		/* 
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/ 
+		overflow:hidden;
+		}
+
+	#prevBtn, #nextBtn,
+	#slider1next, #slider1prev{ 
+		display:block;
+		width:30px;
+		height:77px;
+		position:absolute;
+		left:-30px;
+		top:71px;
+		z-index:1000;
+		}	
+	#nextBtn, #slider1next{ 
+		left:696px;
+		}														
+	#prevBtn a, #nextBtn a,
+	#slider1next a, #slider1prev a{  
+		display:block;
+		position:relative;
+		width:30px;
+		height:77px;
+		background:url(/flinders/app_templates/flinderstemplates/images/btn_prev.gif) no-repeat 0 0;	
+		}	
+	#nextBtn a, #slider1next a{ 
+		background:url(/flinders/app_templates/flinderstemplates/images/btn_next.gif) no-repeat 0 0;	
+		}	
+		
+	/* controls */	
+
+	ol#controls{
+		margin: -35px 26px;
+		padding:0;
+		position:relative;
+		float:right;
+		font-size:12px;
+		}
+	ol#controls li{
+		margin:0 5px 0 0; 
+		padding:0;
+		float:left;
+		list-style:none;
+		width:10px;
+		height:10px;
+		}
+	ol#controls li a{
+		/*background: url(/flinders/app_templates/flinderstemplates/images/slider_nav_bg.png) no-repeat 0 0;*/
+		color:#fff;
+		padding:3px 5px 0px 5px;
+		text-decoration:none;
+		}
+	ol#controls li.current a{
+		/*background: url(/flinders/app_templates/flinderstemplates/images/slider_nav_bg_current.png) no-repeat 0 0;*/
+		color:#ffd300;
+		cursor:default;
+		}
+	ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;}
+	
+	#slider p, #slider2 p{
+		margin:-6px 0 0 0;
+		padding:6px 0px 6px 10px;
+		font-size:16px;
+		}
+		
+	#slider li a {
+		color:#fff;
+	}
+	#slider li a:hover {
+		color:#ffd300;
+	}
+	
+	#slider img {
+		margin:0px;
+
+	}
+	
+	#pauseButton{ 
+		position:absolute; top:260px; right:21px; z-index:9999;
+	}
+	
+	
+/*********** End Easy Slider *************/
+
+/*********** homepage info graphics and icons ****************/
+
+	.home_info_graphic, .home_info_button, .info_graphic, .info_button{
+		font-size:16px;
+		line-height:1.2;
+		margin:0px 0px 10px 0px;
+		padding:10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-khtml-border-radius: 10px;
+		border-radius: 10px;
+	}
+	
+	.seminar, .notices, .search, .info, .grad_cap, .openday, .certificate, .abroad, .question, .navigate, .chat{
+		padding:0px 50px 0px 0px;
+	}
+	.seminar {
+		background:url(images/info_graphics/seminar.png) center right no-repeat;
+	}
+	
+	.notices {
+		background:url(images/info_graphics/notes.png) center right no-repeat;
+	}
+	
+	.grad_cap {
+		background:url(images/info_graphics/cap.png) center right no-repeat;
+	}
+	
+	.certificate{
+		background:url(images/info_graphics/certificate.png) center right no-repeat;
+	}
+	
+	nfo_button a,.search {
+		background:url(images/info_graphics/search.png) center right no-repeat;
+	}
+	
+	.abroad {
+		background:url(images/info_graphics/jet.png) center right no-repeat;
+	}
+	
+	.info {
+		background:url(images/info_graphics/info.png) center right no-repeat;
+	}
+	
+	.question {
+		background:url(images/info_graphics/question.png) center right no-repeat;
+	}
+	
+	.navigate {
+		background:url(images/info_graphics/navigate.png) center right no-repeat;	
+	}
+	
+	.chat {
+		background:url(images/info_graphics/chat.png) center right no-repeat;	
+	}
+	
+	.openday {
+		background:url(images/info_graphics/openday.png) center right no-repeat;	
+	}
+	
+	
+	.info_graphic a, .home_info_graphic a, .info_button a, .home_info_button a   {
+		display:block;
+		color:#fff;
+	}
+	
+	.info_graphic a:link, .home_info_graphic a:link, .info_button a:link, .home_info_button a:link   {
+		display:block;
+		color:#fff;
+	}
+	
+	.info_graphic a:visited, .home_info_graphic a:visited, .info_button a:visited, .home_info_button a:visited {
+		color:#fff;
+	}
+
+	.info_graphic a:hover, .home_info_graphic a:hover, .info_button a:hover, .home_info_button a:hover {
+		color:#002f60;
+	}
+
+/*********** end info graphics and icons ****************/
+
+/*********** Gradients  *************/
+
+	.container_gradient, .blue_gradient, .navy_gradient, .charcoal_gradient, .red_gradient, .green_gradient, .gold_gradient, .quick_intro{
+		margin:0px 0px 10px 0px;
+		padding:10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-khtml-border-radius: 10px;
+		border-radius: 10px;
+	}
+	
+	.container_gradient {
+		background:url(/flinders/app_templates/flinderstemplates/images/grey_gradient.jpg) #eeeeee repeat-x bottom center;
+	}
+	
+	.blue_gradient {
+		background:url(/flinders/app_templates/flinderstemplates/images/light_blue_gradient.jpg) #62a4d3 repeat-x bottom center;
+	}
+	
+	.navy_gradient {
+		background:url(/flinders/app_templates/flinderstemplates/images/navy_gradient.jpg) #62a4d3 repeat-x bottom center;
+	}
+	
+	.charcoal_gradient {
+		background:url(/flinders/app_templates/flinderstemplates/images/dark_grey_gradient.jpg) #a0a5a9 repeat-x bottom center;
+		color:#fff;
+	}
+	
+	.charcoal_gradient a:hover{
+		color:#ffd300;
+	}
+	
+	.red_gradient {
+		background:url(/flinders/app_templates/flinderstemplates/images/red_gradient.jpg) #f8caa8 repeat-x bottom center;
+	}
+	
+	.red_gradient a:hover{
+		color:#000;
+	}
+	
+	.green_gradient {
+		background:url(/flinders/app_templates/flinderstemplates/images/green_gradient.jpg) #d4e0d8 repeat-x bottom center;
+		color:#ffd300;
+	}
+	
+	.green_gradient a:hover{
+		color:#ffd300;
+	}
+	
+	.gold_gradient {
+		background:url(/flinders/app_templates/flinderstemplates/images/gold_gradient.jpg) #fce66d repeat-x bottom center;
+		color:#000;
+	}
+	
+	.gold_gradient a, .gold_gradient a:visited {
+		color:#000;
+	}
+	
+	.gold_gradient a:hover{
+		color:#e96f24;
+	}
+	
+	.quick_intro {
+		background:#eee repeat-x bottom;
+	}
+	
+	
+/*********** End Gradients  *************/
+
+
+/*********** Horizontal Margin used to add 10px margin for horizontal padding  *************/
+
+	.horizontal_margin {
+		margin: 0px 0px 10px 0px !important;
+	}
+	
+/*********** End Gradients  *************/
+
+
+/*********** App styles  *************/
+
+.app_footer iframe {
+	height:350px;
+}
+	
+/*********** End App styles  *************/
+
+
+/*********** Style for selection in tinyMCE  *************/
+
+.numberedlistupperroman, .numbered_list_upper_roman {list-style-type: upper-roman;}
+.numberedlistlowerroman, .numbered_list_lower_roman {list-style-type: lower-roman;}
+.numberedlistupperalpha, .numbered_list_upper_alpha {list-style-type: upper-alpha;}
+.numberedlistloweralpha, .numbered_list_lower_alpha {list-style-type: lower-alpha;}
+.numberedlisttwodigits, .numbered_list_two_digits  {list-style-type: decimal-leading-zero;}
+
+.listnobullets, .list_no_bullets {list-style-type:none;margin: 0;}
+.listnobullets ul, .list_no_bullets ul {list-style-type:none;}
+.listnobullets li, .list_no_bullets li  {list-style-type:none;}
+
+.tab1 {padding-left:1.5em;}
+.tab2 {padding-left:3.0em;}
+.tab3 {padding-left:4.5em;}
+.tab4 {padding-left:6.0em;}
+.tab5 {padding-left:7.5em;}
+.tab6 {padding-left:9.0em;}
+.tab7 {padding-left:10.5em;}
+
+.floatleft, .float_left {float:left;}
+img.floatleft, img.float_left, .floatleft img, .float_left img {margin:0px 10px 10px 0px;}
+.floatright, .float_right {float:right;}
+img.floatright, img.float_right, .floatright img, .float_right img {margin:0px 0px 10px 10px;}
+.floatclear, .float_clear {clear:both;}
+/*.clear {clear:both;} */
+.noclass {}
+
+.imgwithcaption, .img_with_caption {margin-bottom:0px;}
+.imgcaption, .img_caption {margin:0px 0px 10px 0px;	font-size:90%;}
+img.float_left + div.imgcaption,img.floatleft + div.imgcaption {
+    float: left;
+    clear: both;
+}
+img.float_right + div.imgcaption,img.float_right + div.imgcaption {
+    float: right;
+    clear: both;
+}
+.imgnoborder, .img_no_border {border:0;}
+.img_border {border:1px solid #4b4b4d; padding:2px;}
+
+.flincontenttable1, .flin_content_table1 {border: solid 1px #777777;}
+.flincontenttable1 td, .flin_content_table1 td {	border: solid 1px #777777; padding: 3px;}
+
+/* Sample content item FlindersTable1 */
+table.FlindersTable1 {border:solid 1px #cccccc; border-collapse:collapse;}  
+.FlindersTable1 thead th {text-align:left;}
+.FlindersTable1 tr {border:solid 1px #cccccc;} 
+.FlindersTable1 td {border:solid 1px #cccccc; padding:5px;} 
+.FlindersTable1 th {font-size:80%;font-weight:bold; background-color:#e1f3ff; border:solid 1px #cccccc;} 
+/* Classes added for Course Program of Study pages */
+tr.footnote td, tr.dividingnote td {border-left:solid 1px white; border-right:solid 1px white;}
+tr.footnote {font-size:90%;}
+tr.dividingnote {font-size:100%;}
+
+/* Styles for Course Info pages tables */
+.ci_domestic, .ci_intl, .ci_fees {text-align:left;}
+.ci_intl thead,.ci_intl th {text-align:left;}
+.ci_fees tr,.ci_fees td,.ci_fees th .ci_domestic tr, .ci_domestic td, .ci_domestic th, .ci_intl tr, .ci_intl tr, .ci_intl td {border:solid 1px #aaaaaa;}
+.ci_domestic th, .ci_intl th, .ci_fees th {font-weight:bold; width:10%; border:solid 1px #aaaaaa;}
+table.ci_domestic, table.ci_intl, table.ci_fees {border:solid 1px #aaaaaa;}
+table.ci_domestic {float:left;width:45%;margin:0;}
+table.ci_intl {width:45%;margin:0;}
+.ci_domestic th, .ci_domestic td, .ci_intl th, .ci_intl td, .ci_fees th, .ci_fees td {vertical-align:top;}
+.ci_domestic th[scope=row], .ci_domestic td {background-color:#fff9cb;}
+.ci_domestic th[scope=col],.ci_domestic th[scope=colgroup] {background-color:#ffd300;font-size:1.2em;}
+.ci_intl th[scope=row], .ci_intl td {background-color:#f2faff;}
+.ci_intl th[scope=col], .ci_intl th[scope=colgroup] {background-color:#e1f3ff;font-size:1.2em;}
+/* fees table */
+.ci_fees th {font-size:1.2em;}
+.ci_fees th:nth-child(2) {background-color:#ffd300;font-size:1.2em;}
+.ci_fees th+th {background-color:#ffd300;}  /* Extra for IE6,7,8 */
+.ci_fees th:nth-child(3) {background-color:#e1f3ff;}
+.ci_fees th+th+th {background-color:#e1f3ff;} /* Extra for IE6,7,8 */
+.ci_fees td:nth-child(2) {background-color:#fff9cb;}
+.ci_fees tr>td+td {background-color:#fff9cb;} /* Extra for IE6,7,8 */
+.ci_fees td:nth-child(3) {background-color:#f2faff;}
+.ci_fees tr>td+td+td {background-color:#f2faff;} /* Extra for IE6,7,8 */
+
+.fullwidth {width:100%}
+
+.footnote {font-size:90%;}
+
+/*h2.headerBannerStudents,h2.headerBannerAdministration, h2.headerBannerNews, h2.headerBannerTeaching, h2.headerBannerActivitiesEvents, h2.headerBannerOffersBenefits, h2.headerBannerGradient { 
+  margin:0px 0px 15px 0px;
+  padding: 10px 5px 5px 5px;
+  background:#ececed bottom right;
+}
+h2.headerBannerGradient {background-image: url(images/heading_gradient.jpg);}
+h2.headerBannerStudents {background-image: url(images/heading_gradient_students.jpg);}
+h2.headerBannerAdministration {background-image: url(images/heading_gradient_admin.jpg);}
+h2.headerBannerNews {background-image: url(images/heading_gradient_news.jpg);}
+h2.headerBannerTeaching {background-image: url(images/heading_gradient_teaching.jpg);}
+h2.headerBannerActivitiesEvents {background-image: url(images/heading_gradient_events.jpg);}
+h2.headerBannerOffersBenefits {background-image: url(images/heading_gradient_offers.jpg);}*/
+
+
+/* Classes for aligning captioned images (default behaviour) */
+div.captionedimageright {float: right; clear: right;} 
+div.captionedimageleft {float: left; margin-right:0.5em;} 
+/* Editor-only: show bad links (detected by containerversions afterupdate event) */
+a.flinders-badlink {color:red;}
+/* Collapsible content */
+.collapsible h2:after {content:" [+]";font-size:0.7em;color:#666;}
+.collapsible h2.active:after {content:" [-]";}
+.collapsible h3:after {content:" [+]";font-size:0.7em;color:#666;}
+.collapsible h3.active:after {content:" [-]";}
+
+
+/*** New classes ***/
+
+.page_break, .content_break {clear:both;}
+
+a.info_graphic, a.info_graphic_seminar, a.info_graphic_notices, a.info_graphic_search, a.info_graphic_info, a.info_graphic_grad_cap, a.info_graphic_certificate, a.info_graphic_abroad, a.info_graphic_question, a.info_graphic_navigate, a.info_graphic_chat {
+	font-size:16px; 
+	line-height:1.2;
+	margin:0px 10px 10px 0px;
+	padding:10px;
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	-khtml-border-radius: 10px; 
+	border-radius: 10px;
+	display:block;
+	width:180px;
+	background-color:#5f5f61;
+	float:left;
+}
+
+	
+.info_graphic_seminar, .info_graphic_notices, .info_graphic_search, .info_graphic_info, .info_graphic_grad_cap, .info_graphic_certificate, .info_graphic_abroad, .info_graphic_question, .info_graphic_navigate, .info_graphic_chat {
+	padding:10px 70px 10px 10px;
+}
+
+a.info_graphic, a.info_graphic_seminar, a.info_graphic_notices, a.info_graphic_search, a.info_graphic_info, a.info_graphic_grad_cap, a.info_graphic_certificate, a.info_graphic_abroad, a.info_graphic_question, a.info_graphic_navigate, a.info_graphic_chat {
+		color:#fff;
+		text-decoration:none;
+}
+	
+a:hover.info_graphic, a:hover.info_graphic_seminar, a:hover.info_graphic_notices, a:hover.info_graphic_search, a:hover.info_graphic_info, a:hover.info_graphic_grad_cap, a:hover.info_graphic_certificate, a:hover.info_graphic_abroad, a:hover.info_graphic_question, a:hover.info_graphic_navigate, a:hover.info_graphic_chat {
+		color:#ffd300;
+	}
+
+.info_graphic {background:url(images/infographics/info_graphic_plain.jpg) center right no-repeat;}
+.info_graphic_seminar {background:url(images/infographics/info_graphic_seminar.jpg) center right no-repeat;}	
+.info_graphic_notices {background:url(images/infographics/info_graphic_note.jpg) center right no-repeat;}
+.info_graphic_grad_cap {background:url(images/infographics/info_graphic_grad_cap.jpg) center right no-repeat;}
+.info_graphic_certificate{background:url(images/infographics/info_graphic_certificate.jpg) center right no-repeat;}
+.info_graphic_search {background:url(images/infographics/info_graphic_search.jpg) center right no-repeat;}
+.info_graphic_abroad {background:url(images/infographics/info_graphic_abroad.jpg) center right no-repeat;}
+.info_graphic_info {background:url(images/infographics/info_graphic_info.jpg) center right no-repeat;}
+.info_graphic_question {background:url(images/infographics/info_graphic_question.jpg) center right no-repeat;}
+.info_graphic_navigate {background:url(images/infographics/info_graphic_navigate.jpg) center right no-repeat;	}
+.info_graphic_chat {background:url(images/infographics/info_graphic_chat.jpg) center right no-repeat;	}
+
+/*** New classes ***/
+.info_button {background:url(images/infographics/info_graphic_plain.jpg) center right no-repeat;}
+.info_button_abroad {background:url(images/infographics/info_graphic_abroad.jpg) center right no-repeat;}
+.info_button_certificate{background:url(images/infographics/info_graphic_certificate.jpg) center right no-repeat;}
+.info_button_chat {background:url(images/infographics/info_graphic_chat.jpg) center right no-repeat;	}
+.info_button_grad_cap {background:url(images/infographics/info_graphic_grad_cap.jpg) center right no-repeat;}
+.info_button_info {background:url(images/infographics/info_graphic_info.jpg) center right no-repeat;}
+.info_button_navigate {background:url(images/infographics/info_graphic_navigate.jpg) center right no-repeat;	}
+.info_button_notices {background:url(images/infographics/info_graphic_note.jpg) center right no-repeat;}
+.info_button_question {background:url(images/infographics/info_graphic_question.jpg) center right no-repeat;}
+.info_button_search {background:url(images/infographics/info_graphic_search.jpg) center right no-repeat;}
+.info_button_seminar {background:url(images/infographics/info_graphic_seminar.jpg) center right no-repeat;}
+a.info_button, a.info_button_seminar, a.info_button_notices, a.info_button_search, a.info_button_info, a.info_button_grad_cap, a.info_button_certificate, a.info_button_abroad, a.info_button_question, a.info_button_navigate, a.info_button_chat {
+	font-size:16px; 
+	line-height:1.2;
+	margin:0px 10px 10px 0px;
+	padding:10px;
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	-khtml-border-radius: 10px; 
+	border-radius: 10px;
+	display:block;
+	width:180px;
+	background-color:#5f5f61;
+	float:left;
+}
+.info_button_seminar, .info_button_notices, .info_button_search, .info_button_info, .info_button_grad_cap, .info_button_certificate, .info_button_abroad, .info_button_question, .info_button_navigate, .info_button_chat {
+	padding:10px 70px 10px 10px;
+}
+a.info_button, a.info_button_seminar, a.info_button_notices, a.info_button_search, a.info_button_info, a.info_button_grad_cap, a.info_button_certificate, a.info_button_abroad, a.info_button_question, a.info_button_navigate, a.info_button_chat {
+		color:#fff;
+		text-decoration:none;
+}
+a:hover.info_button, a:hover.info_button_seminar, a:hover.info_button_notices, a:hover.info_button_search, a:hover.info_button_info, a:hover.info_button_grad_cap, a:hover.info_button_certificate, a:hover.info_button_abroad, a:hover.info_button_question, a:hover.info_button_navigate, a:hover.info_button_chat {
+		color:#ffd300;
+	}
+
+.tablenoborders, .table_no_borders {border:none;}
+.tableborder1pxgrey, .table_border_1px_grey {border:solid 1px #4b4b4d;}
+.tableallborders1pxgrey, .tableallborders1pxgrey td, .table_all_borders_1px_grey, .table_all_borders_1px_grey td, .table_all_borders_1px_grey th {border:solid 1px #4b4b4d;}
+.tableminimalborders, .table_minimal_borders, .table_minimal_borders td, .table_minimal_borders th  {border: solid 1px #cccccc;}
+.table_heading, .table_heading th {font-weight:bold;text-align:left;}
+.table_heading h1, .table_heading h2, .table_heading h3, .table_heading h4, .table_heading h5, .table_heading h6{margin:0px 0px 0px 0px;}
+
+.table_bg_blue {background-color:#E1F3FF;}
+.table_bg_light_blue {background-color:#F2FAFF;}
+.table_bg_grey {background-color:#BABCBD;}
+.table_bg_light_grey {background-color:#eeeeee;}
+.table_bg_yellow {background-color:#FFD300;}
+.table_bg_light_yellow {background-color:#FFF9CB;}
+.table_bg_green {background-color:#c9dad1;}
+.table_bg_light_green {background-color:#e9f9f1;}
+.table_bg_red {background-color:#ffb172;}
+.table_bg_light_red {background-color:#ffe3cc;}
+
+
+/***** Styles that might not be used *******/
+
+
+/********** TInyMCE Styles *************/
+
+
+
+/*********** End TInyMCE Styles *************/
+	
+/*table a, table a:visited  {	
+	color:#823b01;
+}
+*/
+.hidden {
+	display:none;
+}
+
+/*** Scholarships page fix ***/
+
+li.form {
+	list-style:none;
+}
+
+.superscript, sup {font-size:xx-small; vertical-align:super;} 
+.subscript, sub {font-size:xx-small; vertical-align:sub;} 
+
+
+

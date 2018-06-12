@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*	Typography presets
+	------------------	*/
+
+	h1 {
+		font-size: 20px;
+		line-height: 24px;
+	}
+	 
+	h2 {
+		font-size: 18px;
+		line-height: 22px;
+	}
+	
+	h3 {
+		font-size: 16px;
+		line-height: 20px;
+		
+	}
+	
+	h4, h5, h6 {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	
+	h1, h2, h3, h4, h5, h6{
+		margin:0px 0px 10px 0px;
+	}
+	
+	body {
+		font: 12px/1.1 Helvetica, Arial, sans-serif, serif;
+	}
+	
+	ul, ol {
+		padding-bottom:5px;
+	}
+
+
+
+
+#logout {
+	display: none;
+	visibility: hidden;
+}
+
+
+#appfooter {
+	display: none;
+	visibility: hidden;
+}
+
+
+	.updated {
+	font-size: 0.8em;
+	font-style: italic;
+	text-align:right;
+}
+
+a:link, a:hover, a:active, a:visited {
+	color:#000;
+	text-decoration:none;
+}
+
+
+
+.home_info_graphic  {
+	
+	
+	color:#000;
+	font-size:1.1em;
+	padding: 10px;
+	border: 1px #000 solid;
+	background-image:none;
+	background-color:#FFF;
+	
+}
+
+.noprint {
+	display: none;
+	visibility: hidden;
+}
+
+
+	.bordertop {
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #000;
+}
+
+/******* Tables *******/
+
+table { page-break-after:auto }
+tr    { page-break-inside:avoid; page-break-after:auto }
+td    { page-break-inside:avoid; page-break-after:auto }
+
+
+
+table.aTable {
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-left-style: solid;
+	border-top-color: #000;
+	border-left-color: #000;
+	border-collapse:collapse;
+
+}
+
+.aTable th,
+.aTable td {
+	margin-top: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-collapse:collapse;
+	padding-top: 2px;
+	padding-right: 6px;
+	padding-bottom: 6px;
+	padding-left: 2px;	
+	
+}
+
+.signature25 {
+	margin-top: 70px;
+	border-top-width: 1px;
+	border-top-style: dotted;
+	border-top-color: #000;
+	width: 20em;
+}
+.signature12 {
+	margin-top: 70px;
+	border-top-width: 1px;
+	border-top-style: dotted;
+	border-top-color: #000;
+	width: 12em;
+}

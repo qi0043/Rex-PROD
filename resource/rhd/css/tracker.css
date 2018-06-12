@@ -1,0 +1,425 @@
+/* CSS Document */
+
+body  {font: normal 0.75em/127% Verdana, Arial, sans-serif, Tahoma ;
+	color: #222;
+	margin: 0;
+	}
+
+div.bodywrapper {margin-left: 3px; margin-right:4px; margin-bottom: 4px;} /* to set up indent of contents below header div starts in banner and ends in footer*/
+
+.contents	{
+	background-color: #fff;
+	padding: 9px;
+	border: 1px solid #fff;
+}
+
+a, a:visited	{	
+	color: #333333;
+	text-decoration:  underline;
+}
+a:hover, a:active {
+	color: #006699;
+	text-decoration: underline;
+}
+
+h1,h2,h3,h4,h5	{
+	margin: 0;
+	padding:.5em 0 .2em 0;
+}
+h1	{
+	font-size: 1.4em;
+}
+h2	{
+	font-size: 1.2em;
+}
+h3	{
+	font-size: 1em;
+}
+h4	{
+	font-size: .9em;
+}
+h5	{
+	font-size: .8em;
+}
+
+
+.crumbs	{
+	font-size: xx-small;
+	color: #996500;
+}
+.crumbs a:link, .crumbs a:visited	{	
+	color: #996500;
+	text-decoration: none;
+}
+.crumbs a:hover	{	
+	text-decoration: underline;
+}
+
+.pagePadding	{
+	margin-right: 11px;
+	margin-left: 11px;
+}
+.mainBanner {
+	height: 101px;
+	background: #C7B37F url("http://www.flinders.edu.au/flinders-top-level-page-files/Images/HomePageImages/banner_default.gif") top right no-repeat;
+}
+.gbls {
+	background: #ffffff url("http://www.flinders.edu.au/flinders-top-level-page-files/Images/HomePageImages/banner-right-bg.gif") top right no-repeat;
+	height: 1.6em;
+	padding: 3px 0 0 0;
+	vertical-align: bottom;
+}
+.gbls ul	{
+	display: inline;
+	list-style: none;
+	line-height:1.4em;
+	padding: 0;
+	margin: 0;
+}
+.gNav {
+	display: inline;
+	list-style: none;
+	font-size: .87em;
+	color: #A1703E;
+	margin:0;
+}
+.gNav a, .gNav a:visited	{	
+	padding: .48em 10px .48em 15px;
+	color: #996633; 
+	text-decoration: none;
+}
+.gNav a:hover, .gNav a:active {
+	background-color: #F7F4E5;
+	text-decoration: none;
+}
+.quickNav	{
+	background-color: #E6D5A9;
+	height: 2em;
+}
+.bannerSearch	{
+	color:#333333;
+	font-size: .9em;
+	font-weight: 700;
+	padding-bottom: .2em;
+}
+.bannerSearch li {
+	height: 1.4em;
+	padding: .7em 0 0 18px;
+	margin: 0;
+	background: url("http://www.flinders.edu.au/flinders-top-level-page-files/Images/HomePageImages/home_arrow.gif") no-repeat;
+	background-position: .6em .9em;
+}
+.quickNav form {
+	margin: 0;
+	float: left;
+	padding: 3px 15px 2px 16px;
+	display:inline;
+}
+#qNtext	{
+	vertical-align:middle;
+}
+.quickNav select {
+	height: 1.85em;
+	margin-left: 7px;
+	font-size: .85em;
+	vertical-align:middle;
+}
+.quickNav input {
+	height: 1.9em;
+	margin-left: 7px;
+	font-size: .9em;
+	vertical-align:middle;
+}
+.quicknav input.btn {
+	margin-left:0;
+	vertical-align:middle;
+}
+
+
+form {margin:0;} /* to stop that pesky line break after forms in IE and sometimes Firefox */
+
+b {font-weight : bold; }
+
+acronym {border-bottom:1px dotted; cursor:help;}
+abbr {border-bottom:1px dotted;} /* abbreviation tag not currently supported by IE */
+
+ul {padding-top: 0.1em; padding-bottom: 0.1em; color: #000000; font-weight:normal; font-size:100%; font-family:Arial, Helvetica, sans-serif; list-style-type:disc;}
+ul li{padding-top: 0.1em; padding-bottom: 0.1em;}
+ul ul {list-style-type:circle;}
+ul ul ul { list-style-type:square;}
+ol {padding-top: 0.1em; padding-bottom: 0.1em; color: #000000;  font-weight:normal; font-size:100%;font-family:Arial, Helvetica, sans-serif;}
+ol li {padding-top: 0.1em; padding-bottom: 0.1em;}
+
+table {color:#000000; font-weight:normal; font-size:100%; font-family:Arial, Helvetica, sans-serif;}
+th {font-weight:bold;}
+td  {color: #000000;font-weight: normal;font-size:100%; font-family:Arial, Helvetica, sans-serif;}
+
+tt   { font-size: 95%; font-family: monospace; margin: 10px;}
+
+SPAN.small {font-weight : normal;font-size : 90%; font-family:Arial, Helvetica, sans-serif; color : #000000; margin: 10px;}
+SELECT {font-weight:normal; font-size:95%; font-family:Arial, Helvetica, sans-serif; color:#000000;}
+PRE  {font-size:120%; font-family:monospace; margin:10px;}
+
+/* ------------ Image captions -----------------------*/
+.image .caption { font-size: 80%;  font-family: Verdana, Arial, sans-serif;  text-align: center; }
+
+/* ------------  Float Right Figure with caption -----------------------*/
+div.figure {float: right;  width: 25%;  border: thin silver solid;  margin: 0.5em;  padding: 0.5em;}
+div.figure p {  text-align: center;  font-style: italic;  font-size: smaller;  text-indent: 0;}
+
+input {color:#0000FF; }
+input:focus {border: 2px solid #000; background-color:#FFFFCC} 
+select:focus {border: 2px solid #000; background-color:#FFFFCC}
+
+p  { color: #000000;font-weight: normal;font-size: 100%; font-family:Arial, Helvetica, sans-serif; }
+p.small  { color: #000000;font-weight: normal;font-size: 80%; font-family:Arial, Helvetica, sans-serif;  margin: 10px;}
+p.footer, TD.footer, div.footer, span.footer{ color: #999999;  font-weight: normal;font-size: 70%; font-family:Arial, Helvetica, sans-serif;}
+
+dl  { margin-left: 1px; padding-bottom: 0.1em;color: #000000;font-weight: normal;font-size:100%; font-family: helvetica, arial, sans-serif;}
+dt  { padding-top: 0.2em; color: #000000;font-weight: normal;font-size:100%; font-family: helvetica, arial, sans-serif; line-height: 170%;}
+dd  { padding-bottom: 0.4em; color: #000000; font-weight: normal;font-size: 100%; font-family: helvetica, arial, sans-serif;}
+
+blockquote  { color: #000000;  font-weight: normal;font-size: 100%; font-family: helvetica, arial, sans-serif; }
+
+div.breadcrumb{font-weight : normal;color: #999999; font-size : 60%; font-family : arial, helvetica, sans-serif; margin-bottom: 5px;}
+div.navbar {font-family:Arial, Helvetica, sans-serif; font-size: 80%;}
+div.ref {font-family:Arial, Helvetica, sans-serif;font-size: 80%; color:#990000; font-weight: bold;}
+.xsmall, option, selected{	color: Black; font-family:Arial, Helvetica, sans-serif; font-size: 9px;}
+
+/* -------------- 2004 Annual Report Styles --------------- */
+div.annualrepcontents {}
+.annualrepcontents ol {list-style-type:none; font-weight: bold;}
+li.annualrepcontents1 {background-image:url(file:///AC iMac HD/Library/WebServer/Documents/images/annualrep/number1_ol.jpg); background-repeat: no-repeat; display: block; padding-left: 25px;}
+li.annualrepcontents2 {background-image:url(file:///AC iMac HD/Library/WebServer/Documents/images/annualrep/number2_ol.jpg); background-repeat: no-repeat; display: block; padding-left: 25px;}
+li.annualrepcontents3 {background-image:url(file:///AC iMac HD/Library/WebServer/Documents/images/annualrep/number3_ol.jpg); background-repeat: no-repeat; display: block; padding-left: 25px;}
+li.annualrepcontents4 {background-image:url(file:///AC iMac HD/Library/WebServer/Documents/images/annualrep/number4_ol.jpg); background-repeat: no-repeat; display: block; padding-left: 25px;}
+li.annualrepcontents5 {background-image:url(file:///AC iMac HD/Library/WebServer/Documents/images/annualrep/number5_ol.jpg); background-repeat: no-repeat; display: block; padding-left: 25px;}
+.annualrepcontents ul {}
+.annualrepcontents li {line-height: 125%;}
+div.annualrepmain {}
+.annualrepmain ul {margin-left: 1.5em; padding-left:1.5em; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0;}
+.annualrepmain ul li {margin-top: 0.3em; margin-bottom: 0.3em;}
+.annualrepmain table { border: 1px solid #99CC99; }
+.annualrepmain tr {}
+.annualrepmain td {padding: 0.2em;border: 1px solid #99CC99;background-color:#FFFFFF;}
+h4 { font-style:italic;}
+div.uplinks {text-align: right; margin-top: 1em; border: none;}
+.uplinks hr {background-color:#FFFFFF; background: url(/images/annualrep/hrdivhalf.gif);background-position:center center; height:6px; width: 300px; border: 0;}
+.uplinks a:link{color:#003366; text-decoration:none; padding: 0.2em; font-weight:bold; }
+.uplinks a:visited{color:#003366; text-decoration:none; padding: 0.2em; font-weight:bold; }
+.uplinks a:hover{color:#FFFFFF; text-decoration:none; background-color:#99CC99; padding: 0.2em; font-weight:bold; }
+.uplinks a:active {color:#FFFFFF; text-decoration:none; background-color:#99CC99; padding: 0.2em; font-weight:bold;}
+hr.wide {background-image:url(/images/annualrep/hrdivwhole.gif); background-position:center center; height:6px; border: none; width: 100%;}
+div.strategy {background-color:#006699; color: #FFFFFF; padding: 0.3em; margin-bottom: 1.5em; margin-top: 1.5em;}
+table.statistics {border: 2px solid #006699;border-collapse:separate;}
+.statistics td {border: 1px solid #99CC99;}
+
+
+
+/* ------------ css styles for 2 column layout on /info/index.html --------- */
+/* left colum */
+div.leftcolinfo { float:left; width:30%; padding: 0 20px 10px 10px; background:#FFFFFF;}
+/* right column */
+div.rightcolinfo {float:left; background:#FFFFFF; padding: 0 20px 10px 10px; }
+
+
+/*--------------------- CSS styles for comp help pages -----------------------*/
+div.comphelpnav {background-color:#FFFFFF; float:left; width:140px; padding-top:0;}
+ul.mainnavlist { margin-top:0px; padding-top:0; list-style-type:none; padding-left:0; margin-left:0; width: 140px; border-top: 1px dashed #999999; }
+.mainnavlist li {margin-left:0; margin-right:0; padding:0.2em 0 0.2em 0; border-bottom: 1px dashed #999999;}
+.mainnavlist li a:link {
+display:block; background: url(/images/nav/bluearrow.gif); background-position: 0 0.1em; background-repeat:no-repeat;
+color:#0000FF; font-family:Arial, Helvetica, sans-serif; font-size:0.9em; text-decoration:none; background-color:#FFFFFF; padding-left: 14px;}
+.mainnavlist li a:visited {
+display:block; background: url(/images/nav/bluearrow.gif); background-position: 0 0.1em; background-repeat:no-repeat;
+color:#003366; font-family:Arial, Helvetica, sans-serif; font-size:0.9em; text-decoration:none; background-color:#FFFFFF; padding-left: 14px;}
+.mainnavlist li a:hover {
+display:block; background: url(/images/nav/bluearrowhover.gif); background-position: 0 0.1em; background-repeat:no-repeat;
+color:#6699CC; font-family:Arial, Helvetica, sans-serif; font-size:0.9em; text-decoration:none; background-color:#FFFFFF; padding-left: 14px;}
+
+ul.nestednavlist {list-style-type:none; padding-left:0; margin-left:20px; width:120px;}
+.nestednavlist li {margin-left:0; border-bottom: 0; padding: 0.1em 0 0.1em 0}
+.nestednavlist li a:link {
+display:block; background: url(/images/nav/bluedot.gif); background-position: 0 0.1em; background-repeat:no-repeat;
+color:#0000FF; font-family:Arial, Helvetica, sans-serif; font-size:0.9em; text-decoration:none; background-color:#FFFFFF; padding-left: 14px;}
+.nestednavlist li a:visited {
+display:block; background: url(/images/nav/bluedot.gif); background-position: 0 0.1em; background-repeat:no-repeat;
+color:#003366; font-family:Arial, Helvetica, sans-serif; font-size:0.9em; text-decoration:none; background-color:#FFFFFF; padding-left: 14px;}
+.nestednavlist li a:hover {
+display:block; background: url(/images/nav/bluedothover.gif); background-position: 0 0.1em; background-repeat:no-repeat;
+color:#6699CC; font-family:Arial, Helvetica, sans-serif; font-size:0.9em; text-decoration:none; background-color:#FFFFFF; padding-left: 14px;}
+
+div.comphelpcontent{ display:block; width:100%; max-width: 80%; background-color:#FFFFFF; padding: 0 6px 6px 0; margin: 5px 0 5px 165px;}
+.comphelpcontent acronym {border-bottom:1px dotted; cursor:help;}
+
+div.lightblueheader {display:inline-table; vertical-align:top; background-color:#6699CC; border:0; height:62px; width:100%; min-width:550px;}
+div.yellowheader {background-color:#FFCC66; height:3px; clear:both;}
+div.darkblueheader { height: 20px; vertical-align:middle; clear:both; width:100%; min-width:550px; display:inline-table;  background-color:#000066; text-align:right; margin:0; border-top:2px solid #000066; border-bottom:3px solid #000066;}
+.darkblueheader a:link { font-size:0.8em; color: #6699CC; text-decoration:underline;}
+.darkblueheader a:visited { font-size:0.8em; color: #6699CC; text-decoration:underline;}
+.darkblueheader a:hover {  font-size:0.8em; color:#FFFFFF; text-decoration:underline;}
+.darkblueheader a:active {font-size:0.8em; color: #FFFFFF; text-decoration:underline;}
+div.access{background-color:#000066; position: absolute; top: 67px; left: 5px; font-size:0.8em; color: #6699CC;}
+.access a:link {  color: #6699CC; text-decoration:underline;}
+.access a:visited {  color: #6699CC; text-decoration:underline;}
+.access a:hover {  color:#FFFFFF; text-decoration:underline;}
+.access a:active {  color: #6699CC; text-decoration:underline;}
+
+
+a:link.maincontent { font-size:0.8em; color: #6699CC; text-decoration:underline;}
+a:visited.maincontent{ font-size:0.8em; color: #6699CC; text-decoration:underline;}
+a:hover.maincontent {  font-size:0.8em; color:#FFFFFF; text-decoration:underline;}
+a:active.maincontent {font-size:0.8em; color: #FFFFFF; text-decoration:underline;}
+
+/* contents list for help pages on /help/comphelp/index.html*/
+dl.helpcontents { margin: 0; padding: 0 0 0 2px; border: 0;	 }
+.helpcontents dt { color: #003366; font-weight: bold; font-size: 1.1em;	font-family:Arial, Helvetica, sans-serif; border: 0;
+						padding:0.3em 0 0 0; margin:0; line-height: normal;}
+.helpcontents dd {padding-bottom: 0.3em; padding-top:0; margin-left: 0; padding-left: 0; border-top: 0; }
+
+dl.helpcontentsnested { margin: 0; padding: 0 0 0 2px; border: 0;	}
+.helpcontentsnested dt { background: url(/images/nav/darkbluearrow2.gif); background-repeat:no-repeat; background-position:  0 5px;
+							color: #003366; font-weight: bold; font-size: 1.1em; font-family:Arial, Helvetica, sans-serif; 
+							border: 0; padding:0.4em 0 0 18px; margin: 0.5em 0 0 40px; line-height: normal;}
+.helpcontentsnested dd { padding:0 0.6em 0 18px; margin-left: 40px; border-top: 0; }
+
+
+/* ------------------------ css styles for index ------------------ */
+hr.blue { background-color:#000066; color:#000066;  height: 3px; clear:both;}
+
+/* definition list of contents in index_copy*/
+dl.contents { margin: 0; padding: 0 5px 0 5px; border: 0; }
+.contents dt {	font-weight: bold; font-size: 1.3em; font-family:Arial, Helvetica, sans-serif;
+				border: 0; padding:0.6em 0 0.5em 0; margin: 0; line-height: normal;	}
+.contents dd {	padding-bottom: 0.6em; padding-top:0; border-bottom: 1px dotted #6699CC; margin-left: 0;	padding-left: 0; border-top: 0; }
+
+ul.contentslinks {margin-top: 4px; margin-bottom: 5px; margin-left: 0; padding-left: 0; list-style-type:none;}
+.contentslinks li {line-height: 1.2; display: inline;  border-right: 1px solid #333333; padding-bottom: 2px; padding-left: 5px;  padding-right: 5px}
+li.contentslinksend { padding-left: 5px; margin-left: 0;  line-height: 1.2 display: inline; border-right: 0; padding-right: 0; padding-bottom: 1px;}
+
+/* classes to ensure the news section has no dividing lines in index*/
+dt.contentsnoline { padding-bottom: 0; margin-left: 0; padding-left: 0;	 border: 0; }
+dd.contentsnoline{ padding-bottom: 0.6em; margin-left: 0; padding-left: 0; border: 0;}
+
+/* classes for the three bottom columns */
+div.contentscolumn{vertical-align:top; float: left; margin: 0 5px 0 5px; padding: 0 0 0 0; width: 28%;  ext-align: left; color: #003366; font-weight: bold; font-size: 1.0em; font-family:Arial, Helvetica, sans-serif;border: 0; line-height: 1.5;}
+.contentscolumn p {font-size: 1.2em; margin:0; padding:0; font-weight: bold;}
+.contentscolumn ul { border-left: 2px solid #000066; font-size: 0.90em;list-style-type:none; padding-left:0; padding-top: 0.1em; margin-left: 0; margin-top: 0.1em; }
+.contentscolumn ul li { width: 90%; line-height: 1.6;}
+.contentscolumn li a:link, .contentscolumn li a:visited {text-decoration: none;  display: block; padding-left: 13px; background: url(/images/nav/darkbluearrow.gif); background-repeat: no-repeat; background-position: 0 0.3em; }
+.contentscolumn li a:hover {text-decoration: none; display: block; padding-left: 13px; background: url(/images/nav/darkbluearrow2.gif); background-repeat: no-repeat; background-position: 0 0.3em;  }
+
+/*------------------------------------------------------------------------------------------------------*/
+/* clear below columns used on multiple pages */
+#clearcontent { clear:both; padding:0 0 0 0;}
+
+/*------------------------------------------------------------------------------------------------------*/
+/* footer generic back to top link */
+div.bttlink{text-align:right; margin-bottom: 0; padding: 0; float:right;vertical-align:baseline;}
+a:link.btt, a:visited.btt {color:#999999; border-bottom: 1px solid #999999; text-decoration:none;
+padding-right: 14px; background-image:url(/images/nav/bttlinks/greybtt.gif); background-repeat:no-repeat; background-position:center right; }
+a:hover.btt {color:#6699CC; border-bottom: 1px solid #6699CC; text-decoration:none; padding-right: 14px; background-image:url(/images/nav/bttlinks/bluebtt.gif); background-repeat:no-repeat; background-position:top right; }
+
+/* Centered back to top link for index.shtml */
+div.centrebttlink{text-align:center; margin-bottom: 0; padding: 0; vertical-align:baseline;}
+.centrebttlink a:link, .centrebtt a:visited {color:#999999; border-bottom: 1px solid #999999; text-decoration:none;
+padding-right: 14px; background-image:url(/images/nav/bttlinks/greybtt.gif); background-repeat:no-repeat; background-position:center right; }
+.centrebttlink a:hover {color:#6699CC; border-bottom: 1px solid #6699CC; text-decoration:none; padding-right: 14px; background-image:url(/images/nav/bttlinks/bluebtt.gif); background-repeat:no-repeat; background-position:top right; }
+
+
+/*------------------------------------------------------------------------------------------------------*/
+/* styles for pullouts! */
+
+/* if link class for pullouts are not specificaly set in html as an a href class, styles carry-over to column on the right, producing invisible links */
+a:link.featurelink, a:visited.featurelink{ color:#FFFFFF; text-decoration:none;}
+a:hover.featurelink{ color:#FFFFFF; text-decoration:underline;}
+
+input.image {border:none; padding:0;}
+
+div.feature{margin: 0 0 10px 0; position: relative; width:155px; text-align:left; font-face:"Arial, Helvetica, sans-serif"; background-image:url(file:///AC iMac HD/Library/WebServer/Documents/images/pullout/featurewrapbg.gif);background-repeat:repeat-y; }
+div.featureheading{position: relative; margin-top: 5px; padding-left: 0; margin-left:0; width:155px; font-weight: bold; color: #FFFFFF; text-align: center; vertical-align:middle; padding-bottom:1em; padding-top: 0.3em;}
+div.headingwrapper {width:155px; position: relative; padding:0; margin:0 3px 0 0; background-image:url(/images/pullout/headingbg.gif); background-repeat:no-repeat; background-position:top left; margin:0; padding:0; } 
+
+div.normalheading{margin-top: 5px; padding-left: 0; margin-left:0; width:155px; background-image:url(file:///AC iMac HD/Library/WebServer/Documents/images/pullout/fhbg.gif); background-repeat:no-repeat; background-position: bottom right; vertical-align:middle; padding-bottom:1em; padding-top: 0.3em;}
+.normalheading p {margin:0 0 0 10px; padding:0; text-align: center; font-size: 100%; font-weight: bold; color: #FFFFFF;}
+
+div.sugheading{margin-top: 5px; padding-left: 0; margin-left:0; width:155px; background-image:url(file:///AC iMac HD/Library/WebServer/Documents/images/pullout/mailbg.gif); background-repeat:no-repeat; background-position: bottom right;  vertical-align:middle; padding-bottom:1em; padding-top: 0.3em;}
+.sugheading p {margin:0 0 0 32px; padding:0; text-align: left; font-size: 100%; font-weight: bold; color: #FFFFFF;}
+
+div.refheading{margin-top: 5px; padding-left: 0; margin-left:0; width:155px; background-image:url(file:///AC iMac HD/Library/WebServer/Documents/images/pullout/infobg.gif); background-repeat:no-repeat; background-position: bottom right; vertical-align:middle; padding-bottom:1em; padding-top: 0.3em;}
+.refheading p {margin:0 0 0 32px; padding:0; text-align: left; font-size: 100%; font-weight: bold; color: #FFFFFF;}
+
+div.catheading{margin-top: 5px; padding-left: 0; margin-left:0; width:155px; background-image:url(file:///AC iMac HD/Library/WebServer/Documents/images/pullout/fhbg.gif); background-repeat:no-repeat; background-position: bottom right; vertical-align:middle; padding-bottom:1em; padding-top: 0.3em;}
+.catheading p {margin:0 0 0 10px; padding:0; text-align: center; font-size: 100%; font-weight: bold; color: #FFFFFF;}
+
+div.menuheading{margin-top: 5px; padding-left: 0; margin-left:0; width:155px; background-image:url(file:///AC iMac HD/Library/WebServer/Documents/images/pullout/nav.gif); background-repeat:no-repeat; background-position: bottom right; vertical-align:middle; padding-bottom:1em; padding-top: 0.3em;}
+.menuheading p {margin:0 0 0 34px; padding:0; text-align: left; font-size: 100%; font-weight: bold; color: #FFFFFF;}
+ul.menu {border-left: 2px solid #000066; font-size: 0.90em;list-style-type:none; margin-left:0; padding: 0; margin-top: 0; margin-bottom:0;}
+.menu li {padding-top: 5px; padding-bottom: 5px;}
+li.menutop{padding-top: 0; }
+li.menubot{padding-bottom: 0;}
+/*.menu li a:link {color:#0000FF;}
+.menu li a:visted {color:#003366;}
+.menu li a:hover {color:#3399FF;}*/
+/* .contentscolumn ul li { width: 90%; line-height: 1.6;} */
+.menu li a:link, .menu li a:visited {text-decoration: none;  display: block; padding-left: 13px; padding-right: 2px; background: url(/images/nav/darkbluearrow.gif); background-repeat: no-repeat; background-position: 0 0.1em; }
+.menu li a:hover {color:#3399FF; text-decoration: none; display: block; padding-left: 13px; background: url(/images/nav/darkbluearrow2.gif); background-repeat: no-repeat; background-position: 0 0.1em;  }
+div.featurecontentwhite{ border-bottom:0;text-align: left; margin:0 0 0 10px; width:145px; background-image:url(/images/pullout/contentbgwhite.gif); background-repeat:repeat-y; background-position:top left; }
+.featurecontentwhite p {border:0; margin:0 5px 0 0; width: 130px;}
+div.featuresmall{margin: 0 0 10px 0; position: relative; width:155px; text-align:left; font-face:"Arial, Helvetica, sans-serif"; background-image:url(file:///AC iMac HD/Library/WebServer/Documents/images/pullout/featurewrapbg.gif);background-repeat:repeat-y; }
+div.featureheadingsmall{position: relative; margin-top: 5px; padding-left: 0; margin-left:0; width:155px; font-weight: bold; color: #FFFFFF; text-align: center; vertical-align:middle; padding-bottom:1em; padding-top: 0.3em;}
+div.headingwrappersmall {width:155px; position: relative; padding:0; margin:0 3px 0 0; background-image:url(/images/pullout/headingbgsmall.gif); background-repeat:no-repeat; background-position:top left; margin:0; padding:0; } 
+div.featurefooterwhite {height: 12px; font-size: 1px; width: 145px; background-position: top left; background-image:url(/images/pullout/footerbgwhite.gif); background-color:#FFFFFF; background-repeat:no-repeat}
+
+
+div.featurecontent{ border-bottom:0;text-align: left; margin:0 0 0 10px; width:145px; background-image:url(/images/pullout/contentbg.gif); background-repeat:repeat-y; background-position:top left; }
+.featurecontent p {border:0; padding: 5px 0 5px 0; margin:0 5px 0 10px; width: 130px; font-size: 85%;}
+p.dbname {color:#CC6600; font-size:100%; font-family:Arial, Helvetica, sans-serif; font-weight:bold;}
+
+div.featurefooter {height: 12px; font-size: 1px; width: 145px; background-position: top left; background-image:url(/images/pullout/footerbg.gif); background-color:#FFFFFF; background-repeat:no-repeat}
+
+/* A-Z List Navigation */
+.Navaz {
+	text-align: left;
+	}
+.Navaz a {
+   font-weight: bold;
+   padding:2px 4px 2px 4px;
+	border: 1px solid #cccccc;
+	text-decoration: none;
+	}
+.Navaz a:hover {
+	background-color: #eeeeee;
+	}
+	
+/* HelpBox */
+.helpbox { 
+    padding-left:10px;
+	padding-right:10px; 
+	float:right;
+	clear:right;
+	margin-left: 10px
+	margin-top: 10px;
+}
+
+.helpcontent {
+	border:1px solid #d6d6d6;
+	background-color:#ffffdd;
+	width:200px;
+	margin:2px;
+	padding:10px;
+	font:1.5em;
+arial, san-serif;
+	color: #FFFFFF;
+}
+
+/* RSS FEED style */
+.feed {
+	border:1px solid;
+	border-color:#FC9 #630 #330 #F96;
+	padding:0 3px;
+	font:bold 10px verdana,sans-serif;
+	color:#FFF;background:#F60;
+	text-decoration:none;
+	margin:4px;
+}

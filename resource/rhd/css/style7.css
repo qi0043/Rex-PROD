@@ -1,0 +1,371 @@
+
+
+#top_banner1 {
+	background: url("../images/header_bg.jpg") no-repeat scroll center top white !important;
+	background-size:100% 100% !important;
+	height:39px;
+	border:none;
+	z-index:1;
+	border-bottom:1px solid #fff;
+}
+
+#topbar {
+	background:none;
+	position:absolute;
+	left:50%;
+	margin-left:-490px;
+	text-align:right;
+	z-index:2;
+}
+
+#top_banner2 {
+	height:95px;
+	/*background: url("../images/xx.png") no-repeat scroll 0 3px transparent*/
+}
+
+#top_banner5 .banner5 {
+	color:#000;
+	font-size:20px;
+	font-weight:normal;
+	padding-top:6px;
+        padding-left:20px;
+        float: left; /*flextra*/
+}
+
+#top_banner2 .banner {
+	color:#000;
+	font-size:24px;
+	font-weight:normal;
+	padding-top:65px;
+        float: right; /*flextra*/
+}
+
+table caption,
+table th,
+table td {
+    /*padding:            0.1em 0.5em 0.1em 0.5em;*/
+    padding:            0.2em 0.6em 0.2em 0.6em;
+    margin:             0.1em;
+    vertical-align:     top;
+}
+
+th {
+    font-weight:        bold;
+    color:              #000000;
+    background:         #D3DCE3;
+}
+/* odd items 1,3,5,7,... */
+table tr.odd th,
+.odd {
+    /*background: #E5E5E5;*/
+    /*background: #F5F5F5;*/
+    background: #FFFFFF;
+}
+
+/* even items 2,4,6,8,... */
+table tr.even th,
+.even {
+    /*background: #D5D5D5;*/
+    /* background: #E5E5E5; */
+    /*background: #F0F0F0;*/
+    background: #EEEEEE;
+}
+
+/* odd table rows 1,3,5,7,... */
+table tr.odd th,
+table tr.odd,
+table tr.even th,
+table tr.even {
+    text-align:         left;
+}
+
+/* marked table rows */
+table tr.marked th,
+table tr.marked {
+    background:   #FFCC99;
+    color:   #000000;
+}
+ 
+/* hovered items */
+.odd:hover,
+.even:hover,
+.hover {
+    background: #CCFFCC;
+    color: #000000;
+}
+
+/* hovered table rows */
+table tr.odd:hover th,
+table tr.even:hover th,
+table tr.hover th {
+    background:   #CCFFCC;
+    color:   #000000;
+}
+
+/**
+ * marks table rows/cells if the db field is in a where condition
+ */
+tr.condition th,
+tr.condition td,
+td.condition,
+th.condition {
+    border: 1px solid #FFCC99;
+}
+
+table .value {
+    text-align:         right;
+    white-space:        normal;
+}
+/* IE doesnt handles 'pre' right */
+table [class=value] {
+    white-space:        normal;
+}
+
+table tr td{
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#ereading_table tr td{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.value {
+    font-family:        monospace;
+}
+.value .attention {
+    color:              red;
+    font-weight:        bold;
+}
+.value .allfine {
+    color:              green;
+}
+
+
+img.lightbulb {
+    cursor:             pointer;
+}
+
+.pdflayout {
+    overflow:           hidden;
+    clip:               inherit;
+    background-color:   #FFFFFF;
+    display:            none;
+    border:             1px solid #000000;
+    position:           relative;
+}
+
+.pdflayout_table {
+    background:         #D3DCE3;
+    color:              #000000;
+    overflow:           hidden;
+    clip:               inherit;
+    z-index:            2;
+    display:            inline;
+    visibility:         inherit;
+    cursor:             move;
+    position:           absolute;
+    font-size:          80%;
+    border:             1px dashed #000000;
+}
+
+
+.tblcomment {
+    font-size:          70%;
+    font-weight:        normal;
+    color:              #000099;
+}
+
+.tblHeaders {
+    font-weight:        bold;
+    color:              #000000;
+    background:         #D3DCE3;
+}
+
+.tblFooters {
+    font-weight:        normal;
+    color:              #000000;
+    background:         #D3DCE3;
+
+}
+
+.tblHeaders a:link,
+.tblHeaders a:active,
+.tblHeaders a:visited,
+.tblFooters a:link,
+.tblFooters a:active,
+.tblFooters a:visited {
+    color:              #0000FF;
+}
+
+.tblHeaders a:hover,
+.tblFooters a:hover {
+    color:              #FF0000;
+}
+
+table
+  {
+  /*border-collapse:collapse;*/
+  border-collapse:separate;
+  }
+
+/*table, th, td
+  {
+  border: 1px solid darkgray ;
+  }*/
+  
+  
+  
+/****** Section navigation styles *******/
+	
+	nav a {
+		text-decoration:none;
+		list-style:none;
+		display:block;
+	}
+	
+	.section_nav ul {
+		border-top:1px dotted #ccc;
+		margin:0px 0px 10px 0px;
+		padding:0px;
+	}
+	.section_nav ul ul {
+		border-top:none;
+		margin:0px 0px 0px 0px;
+	}
+	
+	.section_nav ul.children {
+		margin:0 0 0px;
+		padding:0;
+	}
+	
+	nav li li {
+		margin:0px 0px 0px 20px;
+		list-style:none;
+	}
+
+	.section_nav h2 {
+		position: absolute;
+		left: -2000em;
+	}
+	
+	.section_nav li {
+			border-bottom:1px dotted #ccc;
+			padding:2px 0px 2px 0px;
+	}
+	
+	.section_nav li li {
+			border-bottom:none; 		
+	}
+	
+	.section_nav  li.section a, .section_nav  li.sub_section a, .section_nav  li.sub_page a, .section_nav  li.current_page a, .section_nav li.sec_selected a  {
+		padding:2px 5px 2px 15px;
+	}
+	
+	.section_nav .section a {
+		background:url(images/section_nav_expand.jpg) no-repeat top left;
+	}
+	
+	.section_nav .section a:hover {
+		background:url(images/section_nav_expand.jpg) #fff6cc no-repeat top left;
+	}
+	
+	.section_nav li a.sec_selected {
+		background:url(images/section_nav_contract.jpg) #fff6cc no-repeat top left;
+	}
+	
+	.section_nav li a.current_page {
+		background:#fff6cc;
+	}
+	.section_nav a.sec_selected:hover {
+		color:#b75b09;
+	}
+	
+	
+	.section_nav a:hover {
+		background:#fff6cc;
+		
+	}
+
+
+	.blogs .sub a, .blogs .sub a:hover { /*** Remove icon backgrounds (i.e. expand etc) from blogs side nave ***/
+		background-image:none;
+	}
+        
+/***Alert****/
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.alert h4 {
+  margin-top: 0;
+  color: inherit;
+}
+.alert .alert-link {
+  font-weight: bold;
+}
+.alert > p,
+.alert > ul {
+  margin-bottom: 0;
+}
+.alert > p + p {
+  margin-top: 5px;
+}
+.alert-dismissable,
+.alert-dismissible {
+  padding-right: 35px;
+}
+.alert-dismissable .close,
+.alert-dismissible .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  color: inherit;
+}
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.alert-success hr {
+  border-top-color: #c9e2b3;
+}
+.alert-success .alert-link {
+  color: #2b542c;
+}
+.alert-info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+.alert-info hr {
+  border-top-color: #a6e1ec;
+}
+.alert-info .alert-link {
+  color: #245269;
+}
+.alert-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+.alert-warning hr {
+  border-top-color: #f7e1b5;
+}
+.alert-warning .alert-link {
+  color: #66512c;
+}
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+.alert-danger hr {
+  border-top-color: #e4b9c0;
+}
+.alert-danger .alert-link {
+  color: #843534;
+}
