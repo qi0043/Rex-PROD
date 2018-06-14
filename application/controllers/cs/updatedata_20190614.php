@@ -873,7 +873,7 @@ class UpdateData extends CI_Controller
     }
     
    
-    public function single_supervisor($fan) // requires fan of student, updates supervisors for the student
+    public function single_supervisor($fan)
     {
         try {
            
@@ -936,14 +936,12 @@ class UpdateData extends CI_Controller
             echo "<h3>Principal Supervisor</h3>";
             print_r($principal);
             echo "</pre>";
-
+*/
             echo "<pre>";
             echo "<h3>Last update in db</h3>";
             echo $principal[0]['last_mod_ts'];
             echo "</pre>";
             #exit;
-            
-            */
 
            
         
@@ -960,11 +958,10 @@ class UpdateData extends CI_Controller
                 if (strcasecmp($stu_fan, $duplicate['stu_fan']) == 0) {
                     $error['header'] = 'Duplicated Principal Supervisor found.';
                     $error['msg'] = 'Student FAN: ' . $stu_fan;
-                  /*  echo "<pre>";
+                    echo "<pre>";
             echo "<h3Duplicate</h3>";
             print_r($error);
             echo "</pre>";
-            */
 
 
                     array_push($errors, $error);
