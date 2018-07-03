@@ -26,7 +26,7 @@ class Showmilestone extends CI_Controller
             return;
         }
 
-		      $this->getComment($uuid, $version);
+		    $this->getComment($uuid, $version);
 
 
         $oauth = array('oauth_client_config_name' => 'rhd');
@@ -460,9 +460,9 @@ class Showmilestone extends CI_Controller
         else {
             $milestoneArray['metadata']['professionaldevelopment']['comment'] = '';
         }
-
+        // PAM FIXed xml node 2 Jul 2018 item/support/training/component/description/text
         if(strnatcasecmp($milestoneArray['metadata']['additionaleducation']['requested'], 'Yes') == 0) {
-            $additional_education_description_text = '/xml/item/support/training/component/student/comment';
+            $additional_education_description_text = 'item/support/training/component/description/text';
             $milestoneArray['metadata']['additionaleducation']['inputs']['text'] = $itemXml->nodeValue($additional_education_description_text);
 
             for ($j = 1; $j <= $itemXml->numNodes('/xml/item/support/training/component/description/attachments/uuid'); $j++){
